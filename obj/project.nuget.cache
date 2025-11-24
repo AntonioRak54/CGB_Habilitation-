@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "VMyovNJY8kw=",
+  "success": true,
+  "projectFilePath": "/home/antaresace/Project/Habilitation/CGB_Habilitation/CGB_Habilitation.csproj",
+  "expectedPackageFiles": [
+    "/home/antaresace/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

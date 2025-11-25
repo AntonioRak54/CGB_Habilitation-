@@ -1,6 +1,6 @@
-// using HabilitationApp.Data;
-// using HabilitationApp.Repositories;
-// using HabilitationApp.Services;
+using HabilitationApp.Data;
+using HabilitationApp.Repositories;
+using HabilitationApp.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

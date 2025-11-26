@@ -9,11 +9,11 @@ using Microsoft.Extensions.Logging;
 namespace CGB_Habilitation.Controllers
 {
     [Route("[controller]")]
-    public class UserController  : Controller
+    public class HabilitationController : Controller
     {
-        private readonly ILogger<UserController > _logger;
+        private readonly ILogger<HabilitationController> _logger;
 
-        public UserController (ILogger<UserController > logger)
+        public HabilitationController(ILogger<HabilitationController> logger)
         {
             _logger = logger;
         }

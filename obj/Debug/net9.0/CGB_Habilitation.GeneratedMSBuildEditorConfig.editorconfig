@@ -44,6 +44,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/antaresace/Project/Habilitation/CGB_Habilitation/Views/Utilisateur/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXRpbGlzYXRldXIvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antaresace/Project/Habilitation/CGB_Habilitation/Views/Utilisateur/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXRpbGlzYXRldXIvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antaresace/Project/Habilitation/CGB_Habilitation/Views/Utilisateur/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXRpbGlzYXRldXIvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antaresace/Project/Habilitation/CGB_Habilitation/Views/Utilisateur/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXRpbGlzYXRldXIvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antaresace/Project/Habilitation/CGB_Habilitation/Views/Utilisateur/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXRpbGlzYXRldXIvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/antaresace/Project/Habilitation/CGB_Habilitation/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

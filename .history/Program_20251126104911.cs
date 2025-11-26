@@ -1,5 +1,6 @@
 using HabilitationApp.Data;
 using HabilitationApp.Repositories;
+using HabilitationApp.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,8 +20,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // 3. INJECTION DES REPOSITORIES & SERVICES
 // ======================================
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-builder.Services.AddScoped<IUtilisateurRepository, IUtilisateurRepository>();
-// builder.Services.AddScoped<INotificationService, EmailNotificationService>();
+builder.Services.AddScoped<IUtilisateurRepository, UtilisateurRepository>();
+builder.Services.AddScoped<INotificationService, EmailNotificationService>();
 
 var app = builder.Build();
 

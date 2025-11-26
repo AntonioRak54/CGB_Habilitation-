@@ -1,0 +1,22 @@
+@model HabilitationApp.Models.Utilisateur
+
+@{
+    ViewData["Title"] = "Détails utilisateur";
+}
+
+<h2>Détails de l'utilisateur</h2>
+
+<div class="card p-3">
+    <p><strong>Login :</strong> @Model.Login</p>
+    <p><strong>Email :</strong> @Model.Email</p>
+    <p><strong>Nom :</strong> @Model.Nom</p>
+    <p><strong>Prénom :</strong> @Model.Prenom</p>
+    <p><strong>Téléphone :</strong> @Model.Telephone</p>
+    <p><strong>Actif :</strong> @(Model.EstActif ? "Oui" : "Non")</p>
+    <p><strong>Date création :</strong> @Model.DateCreation</p>
+</div>
+
+<p>
+    <a class="btn btn-warning" href="@Url.Action("Edit", new { id = Model.UserId })">Modifier</a>
+    <a class="btn btn-secondary" href="@Url.Action("Index")">Retour</a>
+</p>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AP3xxoJgFns=",
+  "dgSpecHash": "KkxEtR0GZVs=",
   "success": true,
   "projectFilePath": "/home/antaresace/Project/Habilitation/CGB_Habilitation/CGB_Habilitation.csproj",
   "expectedPackageFiles": [
@@ -79,6 +79,7 @@
     "/home/antaresace/.nuget/packages/microsoft.entityframeworkcore/9.0.0/microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.0/microsoft.entityframeworkcore.abstractions.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.0/microsoft.entityframeworkcore.analyzers.9.0.0.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/microsoft.entityframeworkcore.inmemory/9.0.0/microsoft.entityframeworkcore.inmemory.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.0/microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.entityframeworkcore.tools/10.0.0/microsoft.entityframeworkcore.tools.10.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.0/microsoft.extensions.caching.abstractions.9.0.0.nupkg.sha512",

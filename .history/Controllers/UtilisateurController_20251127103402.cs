@@ -30,7 +30,7 @@ namespace HabilitationApp.Controllers
 
         public IActionResult Create()
         {
-            
+            // Initialize with empty values for required properties
             var newUser = new Utilisateur
             {
                 Login = "",

@@ -299,3 +299,4 @@
 /home/antaresace/Project/Habilitation/CGB_Habilitation/bin/Debug/net9.0/runtimes/osx/lib/net8.0/System.DirectoryServices.Protocols.dll
 /home/antaresace/Project/Habilitation/CGB_Habilitation/bin/Debug/net9.0/runtimes/win/lib/net8.0/System.DirectoryServices.Protocols.dll
 /home/antaresace/Project/Habilitation/CGB_Habilitation/obj/Debug/net9.0/CGB_Habi.F57DE322.Up2Date
+/home/antaresace/Project/Habilitation/CGB_Habilitation/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.InMemory.dll

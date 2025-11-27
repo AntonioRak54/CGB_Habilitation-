@@ -13,7 +13,7 @@ namespace HabilitationApp.Repositories
         {
         }
 
-        public async Task<Utilisateur?> GetByLoginAsync(string login)
+        public async Task<Utilisateur> GetByLoginAsync(string login)
         {
             return await _ctx.Set<Utilisateur>()
                 .FirstOrDefaultAsync(u => u.Login == login);

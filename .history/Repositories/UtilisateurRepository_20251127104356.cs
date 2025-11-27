@@ -1,5 +1,6 @@
 using HabilitationApp.Data;
 using HabilitationApp.Models;
+using HabilitationApp.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace HabilitationApp.Repositories
         {
         }
 
-        public async Task<Utilisateur?> GetByLoginAsync(string login)
+        public async Task<Utilisateur> GetByLoginAsync(string login)
         {
             return await _ctx.Set<Utilisateur>()
                 .FirstOrDefaultAsync(u => u.Login == login);

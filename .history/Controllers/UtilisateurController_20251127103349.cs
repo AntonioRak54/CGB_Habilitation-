@@ -29,33 +29,33 @@ namespace HabilitationApp.Controllers
         }
 
         public IActionResult Create()
-        {
-            
-            var newUser = new Utilisateur
-            {
-                Login = "",
-                Email = "",
-                Nom = "",
-                Prenom = "",
-                Telephone = ""
-            };
-            return View(newUser);
-        }
+{
+    // Initialize with empty values for required properties
+    var newUser = new Utilisateur
+    {
+        Login = "",
+        Email = "",
+        Nom = "",
+        Prenom = "",
+        Telephone = ""
+    };
+    return View(newUser);
+}
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Utilisateur user)
-        {
-            if (!ModelState.IsValid)
-                return View(user);
+[HttpPost]
+[ValidateAntiForgeryToken]
+public async Task<IActionResult> Create(Utilisateur user)
+{
+    if (!ModelState.IsValid) 
+        return View(user);
 
-            // Set the required properties if they're still empty
-            user.UserId = Guid.NewGuid();
-            user.DateCreation = DateTime.UtcNow;
-
-            await _repo.AddAsync(user);
-            return RedirectToAction(nameof(Index));
-        }
+    // Set the required properties if they're still empty
+    user.UserId = Guid.NewGuid();
+    user.DateCreation = DateTime.UtcNow;
+    
+    await _repo.AddAsync(user);
+    return RedirectToAction(nameof(Index));
+}
 
         public async Task<IActionResult> Edit(Guid id)
         {
@@ -80,6 +80,6 @@ namespace HabilitationApp.Controllers
             await _repo.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
         }
-
+        
     }
 }

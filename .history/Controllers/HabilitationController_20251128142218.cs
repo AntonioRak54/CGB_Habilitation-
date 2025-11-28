@@ -27,7 +27,7 @@ namespace HabilitationApp.Controllers
             return View(item);
         }
 
-        // public IActionResult Create() => View(new Habilitation());
+        public IActionResult Create() => View(new Habilitation());
 
         [HttpPost]
         [ValidateAntiForgeryToken]

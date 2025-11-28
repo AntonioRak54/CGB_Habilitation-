@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Threading.Tasks;
-using System.ComponentModel;
 
 namespace HabilitationApp.Controllers
 {
@@ -38,9 +37,15 @@ namespace HabilitationApp.Controllers
             hab.DateDemande = DateTime.UtcNow;
             await _ctx.Habilitations.AddAsync(hab);
             await _ctx.SaveChangesAsync();
+            // TODO: envoyer notif
             return RedirectToAction(nameof(Index));
         }
 
-        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(Habilitation hab)
+        {
+            
+        }
     }
 }

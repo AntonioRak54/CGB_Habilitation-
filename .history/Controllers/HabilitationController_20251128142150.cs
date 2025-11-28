@@ -27,20 +27,32 @@ namespace HabilitationApp.Controllers
             return View(item);
         }
 
-        // public IActionResult Create() => View(new Habilitation());
+        public IActionResult Create()
+        {
+            // Initialize with default values for required properties
+            var newHabilitation = new Habilitation
+            {
+                Type = "", // or a default value like "Standard"
+                Statut = "", // or a default value like "En attente"
+                Motif = "",
+                Utilisateur = new Utilisateur(), // or load from database
+                Profil = new Profil() // or load from database
+            };
+            return View(newHabilitation);
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Habilitation hab)
         {
             if (!ModelState.IsValid) return View(hab);
+            
             hab.HabilitationId = Guid.NewGuid();
             hab.DateDemande = DateTime.UtcNow;
+            
             await _ctx.Habilitations.AddAsync(hab);
             await _ctx.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
-        
     }
 }

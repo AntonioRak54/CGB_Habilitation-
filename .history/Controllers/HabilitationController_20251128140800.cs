@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Threading.Tasks;
-using System.ComponentModel;
 
 namespace HabilitationApp.Controllers
 {
@@ -27,7 +26,7 @@ namespace HabilitationApp.Controllers
             return View(item);
         }
 
-        // public IActionResult Create() => View(new Habilitation());
+        public IActionResult Create() => View(new Habilitation());
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -41,6 +40,11 @@ namespace HabilitationApp.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(Habilitation hab)
+        {
+            
+        }
     }
 }

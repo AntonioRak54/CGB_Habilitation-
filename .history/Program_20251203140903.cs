@@ -11,8 +11,8 @@ var oracleConnectionString = builder.Configuration.GetConnectionString("OracleCo
 
 if (string.IsNullOrEmpty(oracleConnectionString))
 {
-    Console.WriteLine("Aucune chaîne de connexion Oracle trouvée");
-    Console.WriteLine("Pour Docker Oracle, utilisez cette configuration dans appsettings.json:");
+    Console.WriteLine("⚠️ Aucune chaîne de connexion Oracle trouvée");
+    Console.WriteLine("💡 Pour Docker Oracle, utilisez cette configuration dans appsettings.json:");
     Console.WriteLine(@"
     ""ConnectionStrings"": {
         ""OracleConnection"": ""User Id=system;Password=Oracle123;Data Source=localhost:1521/XEPDB1;""
@@ -45,7 +45,7 @@ using (var scope = app.Services.CreateScope())
         
         if (dbContext.Database.CanConnect())
         {
-            Console.WriteLine("Connexion Oracle Docker établie !");
+            Console.WriteLine("✅ Connexion Oracle Docker établie !");
             
             // Créer la base de données si elle n'existe pas
             await dbContext.Database.EnsureCreatedAsync();

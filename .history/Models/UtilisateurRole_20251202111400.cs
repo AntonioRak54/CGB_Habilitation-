@@ -16,6 +16,6 @@ namespace HabilitationApp.Models
         public required Utilisateur Utilisateur { get; set; }
         public required Role Role { get; set; }
 
-        public required Service Service { get; set; }
+        public required Service Service { get; set;}
     }
 }

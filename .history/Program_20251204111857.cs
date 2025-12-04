@@ -15,12 +15,12 @@ if (string.IsNullOrEmpty(oracleConnectionString))
     Console.WriteLine("Pour Docker Oracle, utilisez cette configuration dans appsettings.json:");
     Console.WriteLine(@"
     ""ConnectionStrings"": {
-        ""OracleConnection"": ""User Id=antdb;Password=ninonins;Data Source=localhost:1521/XEPDB1;""
+        ""OracleConnection"": ""User Id=Oracle123;Password=123Oracle;Data Source=localhost:1521/XEPDB1;""
     }");
     
     // Configuration par défaut pour Docker Oracle
     builder.Services.AddDbContext<AppDbContext>(options =>
-        options.UseOracle("User Id=antdb;Password=ninonins;Data Source=localhost:1521/XEPDB1;"));
+        options.UseOracle("User Id=system;Password=Oracle123;Data Source=localhost:1521/XEPDB1;"));
 }
 else
 {

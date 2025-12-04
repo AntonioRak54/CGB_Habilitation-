@@ -20,7 +20,7 @@ if (string.IsNullOrEmpty(oracleConnectionString))
     
     // Configuration par défaut pour Docker Oracle
     builder.Services.AddDbContext<AppDbContext>(options =>
-        options.UseOracle("User Id=antdb;Password=ninonins;Data Source=localhost:1521/XEPDB1;"));
+        options.UseOracle("User Id=system;Password=Oracle123;Data Source=localhost:1521/XEPDB1;"));
 }
 else
 {

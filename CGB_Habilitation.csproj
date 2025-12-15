@@ -14,6 +14,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
@@ -21,8 +22,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
     <PackageReference Include="MimeKit" Version="4.14.0" />
     <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
-    <PackageReference Include="Oracle.EntityFrameworkCore" Version="9.23.26000" />
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="23.26.0" />
     <PackageReference Include="RazorLight" Version="2.3.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.0.1" />
   </ItemGroup>
 
 </Project>

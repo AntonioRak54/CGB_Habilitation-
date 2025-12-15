@@ -1,0 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace CGB_Habilitation.Data
+{
+    public class HabilitationDbContext
+    {
+        public HabilitationDbContext(DbContextOptions<HabilitationDbContext> options)
+            : base(options)
+        {
+    }
+}

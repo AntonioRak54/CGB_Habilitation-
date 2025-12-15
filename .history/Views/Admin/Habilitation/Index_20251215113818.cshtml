@@ -1,0 +1,36 @@
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Routing
+@using Microsoft.CodeAnalysis.Options
+@using Microsoft.Extensions.Options
+@model IEnumerable<CGB_Habilitation.Models.Habilitation>
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Habilitations</h2>
+
+<table border="1">
+    <tr>
+        <th>Agent</th>
+        <th>Type</th>
+        <th>Etat</th>
+        <th>Action</th>
+    </tr>
+
+@foreach (var h in Model)
+    {
+        <tr>
+            <td>@h.Agent?.NomAgent</td>
+            <td>@h.TypeHabilitation</td>
+            <td>@h.Etat</td>
+            <td>
+                @if (h.Etat == "En attente")
+                {
+                    <a asp-action="Valider" asp-route-id="@h.IdHabilitation">Valider</a> 
+                    <text>|</text>
+                    <a asp-action="Refuser" asp-route-id="@h.IdHabilitation">Refuser</a>
+                }
+            </td>
+        </tr>
+    }
+</table>

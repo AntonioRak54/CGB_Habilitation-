@@ -1,0 +1,20 @@
+@{
+    Layout = "~/Views/Shared/_LayoutChefAgence.cshtml";
+}
+
+<a asp-action="Create">Nouvelle demande</a>
+
+<table border="1">
+<tr>
+    <th>Type</th>
+    <th>Etat</th>
+</tr>
+
+@foreach (var h in Model)
+{
+    <tr>
+        <td>@h.TypeHabilitation</td>
+        <td>@h.Etat</td>
+    </tr>
+}
+</table>

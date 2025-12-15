@@ -1,0 +1,33 @@
+@model IEnumerable<CGB_Habilitation.Models.Agent>  <!-- Add this line at the top -->
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Liste des agents</h2>
+
+<table border="1">
+    <tr>
+        <th>Nom</th>
+        <th>Login</th>
+        <th>Rôle</th>
+        <th>Statut</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var agent in Model)
+    {
+        <tr>
+            <td>@agent.NomAgent @agent.PrenomAgent</td>
+            <td>@agent.LoginAgent</td>
+            <td>@agent.RoleAgent?.NomRole</td>
+            <td>@(agent.EstValide ? "Actif" : "En attente")</td>
+            <td>
+                @if (!agent.EstValide)
+                {
+                    <a asp-action="Valider" asp-route-id="@agent.IdAgent">Valider</a>
+                }
+            </td>
+        </tr>
+    }
+</table>

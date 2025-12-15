@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using CGB_Habilitation.Data;
+using Microsoft.AspNetCore.Mvc;
+
+namespace CGB_Habilitation.Controllers.Admin
+{
+   [Area("Admin")]
+public class ParametreController : Controller
+{
+    private readonly HabilitationDbContext _context;
+
+    public ParametreController(HabilitationDbContext context)
+    {
+        _context = context;
+    }
+
+    // ROLES
+    public IActionResult Roles() => View(_context.Roles.ToList());
+
+    public IActionResult CreateRole() => View();
+
+    [HttpPost]
+    public IActionResult CreateRole(Role role)
+    {
+        _context.Roles.Add(role);
+        _context.SaveChanges();
+        return RedirectToAction("Roles");
+    }
+
+    // AGENCES
+    public IActionResult Agences() => View(_context.Agences.ToList());
+
+    public IActionResult CreateAgence() => View();
+
+    [HttpPost]
+    public IActionResult CreateAgence(Agence agence)
+    {
+        _context.Agences.Add(agence);
+        _context.SaveChanges();
+        return RedirectToAction("Agences");
+    }
+
+    // SERVICES
+    public IActionResult Services() => View(_context.Services.ToList());
+
+    public IActionResult CreateService() => View();
+
+    [HttpPost]
+    public IActionResult CreateService(Service service)
+    {
+        _context.Services.Add(service);
+        _context.SaveChanges();
+        return RedirectToAction("Services");
+    }
+}
+}

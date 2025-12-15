@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "O3Dryu7jIns=",
+  "dgSpecHash": "7XUHghupids=",
   "success": true,
   "projectFilePath": "/home/antaresace/Project/Habilitation/CGB_Habilitation/CGB_Habilitation.csproj",
   "expectedPackageFiles": [
@@ -77,6 +77,7 @@
     "/home/antaresace/.nuget/packages/microsoft.codeanalysis.workspaces.common/4.8.0/microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.codeanalysis.workspaces.msbuild/4.8.0/microsoft.codeanalysis.workspaces.msbuild.4.8.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/microsoft.data.sqlite.core/9.0.0/microsoft.data.sqlite.core.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.diasymreader/2.0.0/microsoft.diasymreader.2.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.dotnet.scaffolding.shared/9.0.0/microsoft.dotnet.scaffolding.shared.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.entityframeworkcore/9.0.0/microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
@@ -85,7 +86,10 @@
     "/home/antaresace/.nuget/packages/microsoft.entityframeworkcore.design/9.0.0/microsoft.entityframeworkcore.design.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.entityframeworkcore.inmemory/9.0.0/microsoft.entityframeworkcore.inmemory.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.0/microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/microsoft.entityframeworkcore.sqlite/9.0.0/microsoft.entityframeworkcore.sqlite.9.0.0.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/9.0.0/microsoft.entityframeworkcore.sqlite.core.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.entityframeworkcore.tools/10.0.0/microsoft.entityframeworkcore.tools.10.0.0.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/microsoft.extensions.apidescription.server/9.0.0/microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.0/microsoft.extensions.caching.abstractions.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.extensions.caching.memory/9.0.0/microsoft.extensions.caching.memory.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.0/microsoft.extensions.configuration.abstractions.9.0.0.nupkg.sha512",
@@ -100,6 +104,7 @@
     "/home/antaresace/.nuget/packages/microsoft.extensions.options/9.0.0/microsoft.extensions.options.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.extensions.primitives/9.0.0/microsoft.extensions.primitives.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.net.stringtools/17.10.4/microsoft.net.stringtools.17.10.4.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/microsoft.openapi/2.3.0/microsoft.openapi.2.3.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.visualstudio.web.codegeneration/9.0.0/microsoft.visualstudio.web.codegeneration.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.visualstudio.web.codegeneration.core/9.0.0/microsoft.visualstudio.web.codegeneration.core.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.visualstudio.web.codegeneration.design/9.0.0/microsoft.visualstudio.web.codegeneration.design.9.0.0.nupkg.sha512",
@@ -120,9 +125,17 @@
     "/home/antaresace/.nuget/packages/nuget.projectmodel/6.11.0/nuget.projectmodel.6.11.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/nuget.protocol/6.11.0/nuget.protocol.6.11.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/nuget.versioning/6.11.0/nuget.versioning.6.11.0.nupkg.sha512",
-    "/home/antaresace/.nuget/packages/oracle.entityframeworkcore/9.23.26000/oracle.entityframeworkcore.9.23.26000.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/oracle.entityframeworkcore/9.23.60/oracle.entityframeworkcore.9.23.60.nupkg.sha512",
     "/home/antaresace/.nuget/packages/oracle.manageddataaccess.core/23.26.0/oracle.manageddataaccess.core.23.26.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/razorlight/2.3.1/razorlight.2.3.1.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.10/sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/sqlitepclraw.core/2.1.10/sqlitepclraw.core.2.1.10.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.10/sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.10/sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/swashbuckle.aspnetcore/10.0.1/swashbuckle.aspnetcore.10.0.1.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/swashbuckle.aspnetcore.swagger/10.0.1/swashbuckle.aspnetcore.swagger.10.0.1.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/swashbuckle.aspnetcore.swaggergen/10.0.1/swashbuckle.aspnetcore.swaggergen.10.0.1.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/swashbuckle.aspnetcore.swaggerui/10.0.1/swashbuckle.aspnetcore.swaggerui.10.0.1.nupkg.sha512",
     "/home/antaresace/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/home/antaresace/.nuget/packages/system.codedom/6.0.0/system.codedom.6.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/system.collections.immutable/8.0.0/system.collections.immutable.8.0.0.nupkg.sha512",
@@ -151,5 +164,16 @@
     "/home/antaresace/.nuget/packages/system.threading.tasks.dataflow/8.0.0/system.threading.tasks.dataflow.8.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "CGB_Habilitation depends on Oracle.EntityFrameworkCore (>= 9.0.0) but Oracle.EntityFrameworkCore 9.0.0 was not found. Oracle.EntityFrameworkCore 9.23.60 was resolved instead.",
+      "libraryId": "Oracle.EntityFrameworkCore",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }

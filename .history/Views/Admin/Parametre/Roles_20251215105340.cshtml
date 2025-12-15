@@ -1,0 +1,14 @@
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Rôles</h2>
+
+<a asp-action="CreateRole">Ajouter rôle</a>
+
+<ul>
+@foreach (var r in Model)
+{
+    <li>@r.NomRole</li>
+}
+</ul>

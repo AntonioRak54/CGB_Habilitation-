@@ -1,0 +1,27 @@
+<h2>Liste des agents</h2>
+
+<table border="1">
+    <tr>
+        <th>Nom</th>
+        <th>Login</th>
+        <th>Rôle</th>
+        <th>Statut</th>
+        <th>Action</th>
+    </tr>
+
+@foreach (var a in Model)
+{
+    <tr>
+        <td>@a.NomAgent @a.PrenomAgent</td>
+        <td>@a.LoginAgent</td>
+        <td>@a.RoleAgent?.NomRole</td>
+        <td>@(a.EstValide ? "Actif" : "En attente")</td>
+        <td>
+            @if (!a.EstValide)
+            {
+                <a asp-action="Valider" asp-route-id="@a.IdAgent">Valider</a>
+            }
+        </td>
+    </tr>
+}
+</table>

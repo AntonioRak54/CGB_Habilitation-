@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Test de connexion Oracle";
+}
+
+<h1>Test de connexion Oracle XE</h1>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        <h3>Erreur</h3>
+        <p>@ViewBag.Error</p>
+    </div>
+}
+else if (ViewBag.Message != null)
+{
+    <div class="alert alert-success">
+        <h3>Succès</h3>
+        <p>@ViewBag.Message</p>
+        <p>État: @ViewBag.ConnectionState</p>
+        <p>Version serveur: @ViewBag.ServerVersion</p>
+    </div>
+}
+
+<a href="/TestConnection" class="btn btn-primary">Tester à nouveau</a>

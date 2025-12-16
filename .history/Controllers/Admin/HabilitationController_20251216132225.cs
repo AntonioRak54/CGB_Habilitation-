@@ -23,9 +23,7 @@ namespace CGB_Habilitation.Controllers.Admin
 
         public IActionResult Create()
         {
-            var agents = _context.Agents.ToList();
-            ViewBag.Agents = agents;
-            return View(agents);
+            return View();
         }
 
         [HttpPost]

@@ -21,7 +21,7 @@ public class ParametreController : Controller
     // // ROLES
     // public IActionResult Roles() => View(_context.Roles.ToList());  
 
-    public IActionResult Roles()
+    public IActionResult RoleS()
     {
         var roles = _context.Roles.ToList();
         return View("~/Views/Admin/Parametre/Roles.cshtml", roles);

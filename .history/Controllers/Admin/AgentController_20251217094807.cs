@@ -19,10 +19,10 @@ namespace CGB_Habilitation.Controllers
         }
 
         public IActionResult Index()
-        {
-            var agents = _context.Agents.Include(a => a.RoleAgent).ToList();
-            return View("~/Views/Admin/Agent/Index.cshtml", agents);
-        }
+{
+    var agents = _context.Agents.Include(a => a.RoleAgent).ToList();
+    return View("~/Views/Admin/Agent/Index.cshtml", agents);
+}
 
         public IActionResult Valider(Guid id)
         {

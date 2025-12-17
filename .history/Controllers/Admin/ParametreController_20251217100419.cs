@@ -18,10 +18,10 @@ public class ParametreController : Controller
         _context = context;
     }
 
-    // // ROLES
-    // public IActionResult Roles() => View(_context.Roles.ToList());  
+    // ROLES
+    public IActionResult Roles() => View(_context.Roles.ToList());
 
-    public IActionResult Roles()
+    public IActionResult CreateRole()
     {
         var roles = _context.Roles.ToList();
         return View("~/Views/Admin/Parametre/Roles.cshtml", roles);
@@ -55,11 +55,7 @@ public class ParametreController : Controller
     // SERVICES
     public IActionResult Services() => View(_context.Services.ToList());
 
-    public IActionResult CreateService()
-    {
-        var services = _context.Services.ToList();
-        return View("~/Views/Admin/Parametre/Services.cshtml", services);
-    }
+    public IActionResult CreateService() => View();
 
     [HttpPost]
     public IActionResult CreateService(Service service)

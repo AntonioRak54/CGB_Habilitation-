@@ -29,7 +29,7 @@ namespace CGB_Habilitation.Controllers
             if (agent == null)
             {
                 ViewBag.Error = "Login ou mot de passe incorrect";
-                return View();
+                return View("~/Views/Auth/Login.cshtml");
             }
 
             if (!agent.EstValide)
@@ -46,9 +46,9 @@ namespace CGB_Habilitation.Controllers
             };
         }
 
-        public IActionResult EnAttente() => View();
+        public IActionResult EnAttente() => View("~/Views/Auth/EnAttente.cshtml");
 
-        public IActionResult DemandeCreation() => View();
+        public IActionResult DemandeCreation() => View("~/Views/Auth/DemandeCreation.cshtml");
 
         [HttpPost]
         public IActionResult DemandeCreation(CGB_Habilitation.Models.Agent agent)

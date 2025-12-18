@@ -12,7 +12,7 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace CGB_Habilitation.Migrations
 {
     [DbContext(typeof(HabilitationDbContext))]
-    [Migration("20251215090210_InitOracle")]
+    [Migration("20251218080827_InitOracle")]
     partial class InitOracle
     {
         /// <inheritdoc />

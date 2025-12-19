@@ -50,6 +50,10 @@ namespace CGB_Habilitation.Migrations
                     b.Property<Guid>("CodeAgence")
                         .HasColumnType("RAW(16)");
 
+                    b.Property<string>("CodeAgent")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(2000)");
+
                     b.Property<Guid>("CodeService")
                         .HasColumnType("RAW(16)");
 

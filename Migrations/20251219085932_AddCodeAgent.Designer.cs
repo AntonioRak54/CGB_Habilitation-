@@ -12,8 +12,8 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace CGB_Habilitation.Migrations
 {
     [DbContext(typeof(HabilitationDbContext))]
-    [Migration("20251218080827_InitOracle")]
-    partial class InitOracle
+    [Migration("20251219085932_AddCodeAgent")]
+    partial class AddCodeAgent
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,6 +52,10 @@ namespace CGB_Habilitation.Migrations
 
                     b.Property<Guid>("CodeAgence")
                         .HasColumnType("RAW(16)");
+
+                    b.Property<string>("CodeAgent")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(2000)");
 
                     b.Property<Guid>("CodeService")
                         .HasColumnType("RAW(16)");

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CGB_Habilitation.Migrations
 {
     /// <inheritdoc />
-    public partial class InitOracle : Migration
+    public partial class AddCodeAgent : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -54,6 +54,7 @@ namespace CGB_Habilitation.Migrations
                 columns: table => new
                 {
                     IdAgent = table.Column<Guid>(type: "RAW(16)", nullable: false),
+                    CodeAgent = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
                     NomAgent = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
                     PrenomAgent = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
                     EmailAgent = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),

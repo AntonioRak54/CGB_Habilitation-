@@ -9,6 +9,7 @@ namespace CGB_Habilitation.Models
     {
         public Guid IdRole { get; set; }
         public string NomRole { get; set; }
+        
     }
 
 }

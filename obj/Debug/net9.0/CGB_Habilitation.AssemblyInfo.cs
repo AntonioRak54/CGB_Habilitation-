@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CGB_Habilitation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fccd1a6211836cd75c0ad7941acbd417f4ae7b6c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d007ae67e47946647bde8f62961ee84ba80f7bb9")]
 [assembly: System.Reflection.AssemblyProductAttribute("CGB_Habilitation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CGB_Habilitation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

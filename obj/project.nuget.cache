@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7XUHghupids=",
+  "dgSpecHash": "aPVM5ZikTec=",
   "success": true,
   "projectFilePath": "/home/antaresace/Project/Habilitation/CGB_Habilitation/CGB_Habilitation.csproj",
   "expectedPackageFiles": [
@@ -162,14 +162,18 @@
     "/home/antaresace/.nuget/packages/system.text.json/9.0.0/system.text.json.9.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512",
     "/home/antaresace/.nuget/packages/system.threading.tasks.dataflow/8.0.0/system.threading.tasks.dataflow.8.0.0.nupkg.sha512",
-    "/home/antaresace/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.9/microsoft.aspnetcore.app.ref.9.0.9.nupkg.sha512"
+    "/home/antaresace/.nuget/packages/microsoft.netcore.app.ref/9.0.11/microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.11/microsoft.aspnetcore.app.ref.9.0.11.nupkg.sha512",
+    "/home/antaresace/.nuget/packages/microsoft.netcore.app.host.linux-x64/9.0.11/microsoft.netcore.app.host.linux-x64.9.0.11.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1603",
       "level": "Warning",
-      "warningLevel": 1,
       "message": "CGB_Habilitation depends on Oracle.EntityFrameworkCore (>= 9.0.0) but Oracle.EntityFrameworkCore 9.0.0 was not found. Oracle.EntityFrameworkCore 9.23.60 was resolved instead.",
+      "projectPath": "/home/antaresace/Project/Habilitation/CGB_Habilitation/CGB_Habilitation.csproj",
+      "warningLevel": 1,
+      "filePath": "/home/antaresace/Project/Habilitation/CGB_Habilitation/CGB_Habilitation.csproj",
       "libraryId": "Oracle.EntityFrameworkCore",
       "targetGraphs": [
         "net9.0"

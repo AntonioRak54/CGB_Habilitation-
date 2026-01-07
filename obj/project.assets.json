@@ -7900,10 +7900,6 @@
           {
             "name": "Microsoft.NETCore.App.Host.linux-x64",
             "version": "[9.0.11, 9.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[9.0.11, 9.0.11]"
           }
         ],
         "frameworkReferences": {
@@ -7923,7 +7919,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "CGB_Habilitation depends on Oracle.EntityFrameworkCore (>= 9.0.0) but Oracle.EntityFrameworkCore 9.0.0 was not found. Oracle.EntityFrameworkCore 9.23.60 was resolved instead.",
+      "message": "CGB_Habilitation dépend de Oracle.EntityFrameworkCore (>= 9.0.0) mais Oracle.EntityFrameworkCore 9.0.0 est introuvable. Oracle.EntityFrameworkCore 9.23.60 a été résolu à la place.",
       "libraryId": "Oracle.EntityFrameworkCore",
       "targetGraphs": [
         "net9.0"

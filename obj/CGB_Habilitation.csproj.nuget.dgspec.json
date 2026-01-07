@@ -120,10 +120,6 @@
             {
               "name": "Microsoft.NETCore.App.Host.linux-x64",
               "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
             }
           ],
           "frameworkReferences": {

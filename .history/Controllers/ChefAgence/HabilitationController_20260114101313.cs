@@ -52,7 +52,7 @@ namespace CGB_Habilitation.Controllers.Agent
             }
             
             ViewBag.Agents = _context.Agents.ToList();
-            return View("~/Views/ChefAgence/Habilitation/Create.cshtml", habilitation);
+            return View("~/Views/ChefAgence/Habilitation/Create.cshtml", habilitations);
         }
 
         // GET: Détails d'une habilitation
@@ -67,7 +67,7 @@ namespace CGB_Habilitation.Controllers.Agent
                 return NotFound();
             }
             
-            return View("~/Views/ChefAgence/Habilitation/Details.cshtml", habilitation);
+            return View("~/Views/ChefAgence/Habilitation/Details.cshtml");
         }
 
         // GET: Formulaire d'édition
@@ -80,7 +80,7 @@ namespace CGB_Habilitation.Controllers.Agent
             }
             
             ViewBag.Agents = _context.Agents.ToList();
-            return View("~/Views/ChefAgence/Habilitation/Edit.cshtml", habilitation);
+            return View("~/Views/ChefAgence/Habilitation/Edit.cshtml", habilitations);
         }
 
         // POST: Mettre à jour une habilitation
@@ -132,7 +132,7 @@ namespace CGB_Habilitation.Controllers.Agent
             }
             
             ViewBag.Agents = _context.Agents.ToList();
-                return View("~/Views/ChefAgence/Habilitation/Edit.cshtml", habilitation);
+            return View("~/Views/ChefAgence/Habilitation/Edit.cshtml", habilitations);
         }
 
         // GET: Confirmation de suppression
@@ -164,7 +164,7 @@ namespace CGB_Habilitation.Controllers.Agent
                 TempData["SuccessMessage"] = "Habilitation supprimée avec succès!";
             }
             
-            return RedirectToAction(nameof(Index), "Habilitation");
+            return RedirectToAction(nameof(Index));
         }
 
         // Action pour traiter une habilitation (approuver/rejeter)
@@ -187,7 +187,7 @@ namespace CGB_Habilitation.Controllers.Agent
             _context.SaveChanges();
             
             TempData["SuccessMessage"] = $"Habilitation {nouvelEtat.ToLower()} avec succès!";
-            return RedirectToAction(nameof(Index), "Habilitation");
+            return RedirectToAction(nameof(Index));
         }
 
         private bool HabilitationExists(Guid id)

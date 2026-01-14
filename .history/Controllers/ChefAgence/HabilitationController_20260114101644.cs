@@ -23,7 +23,7 @@ namespace CGB_Habilitation.Controllers.Agent
             var habilitations = _context.Habilitations
                 .Include(h => h.Agent)
                 .ToList();
-            return View("~/Views/ChefAgence/Habilitation/Index.cshtml", habilitations);
+            return View("~/Views/ChefAgence/Habilitation/Index.cshtml");
         }
 
         // GET: Formulaire de création
@@ -52,7 +52,7 @@ namespace CGB_Habilitation.Controllers.Agent
             }
             
             ViewBag.Agents = _context.Agents.ToList();
-            return View("~/Views/ChefAgence/Habilitation/Create.cshtml", habilitation);
+            return View("~/Views/ChefAgence/Habilitation/Create.cshtml");
         }
 
         // GET: Détails d'une habilitation
@@ -67,7 +67,7 @@ namespace CGB_Habilitation.Controllers.Agent
                 return NotFound();
             }
             
-            return View("~/Views/ChefAgence/Habilitation/Details.cshtml", habilitation);
+            return View("~/Views/ChefAgence/Habilitation/Details.cshtml");
         }
 
         // GET: Formulaire d'édition
@@ -80,7 +80,7 @@ namespace CGB_Habilitation.Controllers.Agent
             }
             
             ViewBag.Agents = _context.Agents.ToList();
-            return View("~/Views/ChefAgence/Habilitation/Edit.cshtml", habilitation);
+            return View("~/Views/ChefAgence/Habilitation/Edit.cshtml");
         }
 
         // POST: Mettre à jour une habilitation
@@ -132,7 +132,7 @@ namespace CGB_Habilitation.Controllers.Agent
             }
             
             ViewBag.Agents = _context.Agents.ToList();
-                return View("~/Views/ChefAgence/Habilitation/Edit.cshtml", habilitation);
+                return View("~/Views/ChefAgence/Habilitation/Edit.cshtml");
         }
 
         // GET: Confirmation de suppression
@@ -164,7 +164,7 @@ namespace CGB_Habilitation.Controllers.Agent
                 TempData["SuccessMessage"] = "Habilitation supprimée avec succès!";
             }
             
-            return RedirectToAction(nameof(Index), "Habilitation");
+            return RedirectToAction(nameof(Index));
         }
 
         // Action pour traiter une habilitation (approuver/rejeter)

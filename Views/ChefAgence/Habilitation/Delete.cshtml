@@ -1,0 +1,45 @@
+@model CGB_Habilitation.Models.Habilitation
+
+@{
+    Layout = "~/Views/Shared/_LayoutChefAgence.cshtml";
+    ViewData["Title"] = "Supprimer l'Habilitation";
+}
+
+<div class="container">
+    <h2>Supprimer l'Habilitation</h2>
+    
+    <div class="alert alert-danger">
+        <h4>Êtes-vous sûr de vouloir supprimer cette habilitation ?</h4>
+        <p>Cette action est irréversible.</p>
+    </div>
+    
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">@Model.TypeHabilitation</h5>
+            <hr />
+            
+            <dl class="row">
+                <dt class="col-sm-4">Agent:</dt>
+                <dd class="col-sm-8">@(Model.Agent?.NomAgent) @(Model.Agent?.PrenomAgent)</dd>
+                
+                <dt class="col-sm-4">État:</dt>
+                <dd class="col-sm-8">@Model.Etat</dd>
+                
+                <dt class="col-sm-4">Date Création:</dt>
+                <dd class="col-sm-8">@Model.DateCreationDemande.ToString("dd/MM/yyyy")</dd>
+                
+                <dt class="col-sm-4">Motif:</dt>
+                <dd class="col-sm-8">@Model.Motif</dd>
+            </dl>
+        </div>
+    </div>
+    
+    <form asp-action="Delete" class="mt-4">
+        <input type="hidden" asp-for="IdHabilitation" />
+        
+        <div class="form-group">
+            <input type="submit" value="Supprimer" class="btn btn-danger" />
+            <a asp-action="Index" class="btn btn-secondary">Annuler</a>
+        </div>
+    </form>
+</div>

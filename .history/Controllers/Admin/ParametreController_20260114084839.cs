@@ -28,6 +28,7 @@ public class ParametreController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Create(Role role)
     {
         if (ModelState.IsValid)

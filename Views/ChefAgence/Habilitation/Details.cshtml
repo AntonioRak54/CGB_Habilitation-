@@ -1,0 +1,82 @@
+@model CGB_Habilitation.Models.Habilitation
+
+@{
+    Layout = "~/Views/Shared/_LayoutChefAgence.cshtml";
+    ViewData["Title"] = "Détails de l'Habilitation";
+}
+
+<div class="container">
+    <h2>Détails de l'Habilitation</h2>
+    
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">@Model.TypeHabilitation</h5>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">ID Habilitation:</dt>
+                <dd class="col-sm-9">@Model.IdHabilitation</dd>
+                
+                <dt class="col-sm-3">Type:</dt>
+                <dd class="col-sm-9">@Model.TypeHabilitation</dd>
+                
+                <dt class="col-sm-3">État:</dt>
+                <dd class="col-sm-9">
+                    <span class="badge @GetBadgeClass(Model.Etat)">
+                        @Model.Etat
+                    </span>
+                </dd>
+                
+                <dt class="col-sm-3">Agent:</dt>
+                <dd class="col-sm-9">@(Model.Agent?.NomAgent) @(Model.Agent?.PrenomAgent)</dd>
+                
+                <dt class="col-sm-3">Date Création:</dt>
+                <dd class="col-sm-9">@Model.DateCreationDemande.ToString("dd/MM/yyyy HH:mm")</dd>
+                
+                <dt class="col-sm-3">Date Début:</dt>
+                <dd class="col-sm-9">@(Model.DateDebut?.ToString("dd/MM/yyyy") ?? "Non définie")</dd>
+                
+                <dt class="col-sm-3">Date Fin:</dt>
+                <dd class="col-sm-9">@(Model.DateFin?.ToString("dd/MM/yyyy") ?? "Non définie")</dd>
+                
+                <dt class="col-sm-3">Motif:</dt>
+                <dd class="col-sm-9">@Model.Motif</dd>
+                
+                <dt class="col-sm-3">Pièce jointe:</dt>
+                <dd class="col-sm-9">
+                    @if (!string.IsNullOrEmpty(Model.PieceJoint))
+                    {
+                        <a href="#" class="text-decoration-none">
+                            <i class="bi bi-paperclip"></i> @Model.PieceJoint
+                        </a>
+                    }
+                    else
+                    {
+                        <span class="text-muted">Aucune pièce jointe</span>
+                    }
+                </dd>
+            </dl>
+        </div>
+        <div class="card-footer">
+            <a asp-action="Edit" asp-route-id="@Model.IdHabilitation" class="btn btn-warning">
+                <i class="bi bi-pencil"></i> Modifier
+            </a>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Retour à la liste
+            </a>
+        </div>
+    </div>
+</div>
+
+@functions {
+    string GetBadgeClass(string etat)
+    {
+        return etat switch
+        {
+            "Approuvée" => "bg-success",
+            "Rejetée" => "bg-danger",
+            "En attente" => "bg-warning",
+            _ => "bg-secondary"
+        };
+    }
+}

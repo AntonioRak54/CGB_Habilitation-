@@ -2,15 +2,17 @@
 
 @{
     Layout = "~/Views/Shared/_LayoutChefAgence.cshtml";
-    ViewData["Title"] = "Créer une Habilitation";
+    ViewData["Title"] = "Modifier l'Habilitation";
 }
 
 <div class="container">
-    <h2>Nouvelle Habilitation</h2>
+    <h2>Modifier l'Habilitation</h2>
     
     <hr />
     
-    <form asp-action="Create">
+    <form asp-action="Edit">
+        <input type="hidden" asp-for="IdHabilitation" />
+        
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         
         <div class="row">
@@ -22,22 +24,31 @@
                 </div>
                 
                 <div class="form-group mb-3">
+                    <label asp-for="Etat" class="form-label"></label>
+                    <select asp-for="Etat" class="form-control">
+                        <option value="En attente">En attente</option>
+                        <option value="Approuvée">Approuvée</option>
+                        <option value="Rejetée">Rejetée</option>
+                    </select>
+                    <span asp-validation-for="Etat" class="text-danger"></span>
+                </div>
+                
+                <div class="form-group mb-3">
                     <label asp-for="IdAgent" class="form-label">Agent</label>
                     <select asp-for="IdAgent" class="form-control" 
                             asp-items="@(new SelectList(ViewBag.Agents, "IdAgent", "NomAgent"))">
-                        <option value="">Sélectionner un agent</option>
                     </select>
                     <span asp-validation-for="IdAgent" class="text-danger"></span>
                 </div>
-                
+            </div>
+            
+            <div class="col-md-6">
                 <div class="form-group mb-3">
                     <label asp-for="DateDebut" class="form-label"></label>
                     <input asp-for="DateDebut" type="date" class="form-control" />
                     <span asp-validation-for="DateDebut" class="text-danger"></span>
                 </div>
-            </div>
-            
-            <div class="col-md-6">
+                
                 <div class="form-group mb-3">
                     <label asp-for="DateFin" class="form-label"></label>
                     <input asp-for="DateFin" type="date" class="form-control" />
@@ -49,57 +60,16 @@
                     <textarea asp-for="Motif" class="form-control" rows="3"></textarea>
                     <span asp-validation-for="Motif" class="text-danger"></span>
                 </div>
-                
-                <div class="form-group mb-3">
-                    <label asp-for="PieceJoint" class="form-label"></label>
-                    <input asp-for="PieceJoint" class="form-control" />
-                    <span asp-validation-for="PieceJoint" class="text-danger"></span>
-                    <small class="text-muted">Nom du fichier joint</small>
-                </div>
             </div>
         </div>
         
         <div class="form-group mt-4">
-            <input type="submit" value="Créer" class="btn btn-primary" />
-            <a asp-action="Index" class="btn btn-secondary">Retour à la liste</a>
+            <input type="submit" value="Enregistrer" class="btn btn-primary" />
+            <a asp-action="Index" class="btn btn-secondary">Annuler</a>
         </div>
     </form>
 </div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    
-    <script>
-        $(document).ready(function() {
-            // Validation côté client
-            $('form').validate({
-                rules: {
-                    TypeHabilitation: {
-                        required: true,
-                        minlength: 3
-                    },
-                    IdAgent: {
-                        required: true
-                    },
-                    Motif: {
-                        required: true,
-                        minlength: 10
-                    }
-                },
-                messages: {
-                    TypeHabilitation: {
-                        required: "Le type d'habilitation est requis",
-                        minlength: "Minimum 3 caractères"
-                    },
-                    IdAgent: {
-                        required: "Veuillez sélectionner un agent"
-                    },
-                    Motif: {
-                        required: "Le motif est requis",
-                        minlength: "Minimum 10 caractères"
-                    }
-                }
-            });
-        });
-    </script>
 }

@@ -28,6 +28,7 @@ public class ParametreController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Create(Role role)
     {
         if (ModelState.IsValid)
@@ -42,7 +43,7 @@ public class ParametreController : Controller
         return View(role);
     }
 
-    // AGENCE
+    // AGENCES
     public IActionResult Agences() => View(_context.Agences.ToList());
 
     public IActionResult CreateAgence()

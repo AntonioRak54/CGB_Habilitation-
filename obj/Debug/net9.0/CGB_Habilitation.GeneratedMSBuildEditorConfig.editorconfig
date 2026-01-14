@@ -66,6 +66,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hlZkFnZW5jZS9IYWJpbGl0YXRpb24vQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/antaresace/Project/Habilitation/CGB_Habilitation/Views/ChefAgence/Habilitation/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hlZkFnZW5jZS9IYWJpbGl0YXRpb24vRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antaresace/Project/Habilitation/CGB_Habilitation/Views/ChefAgence/Habilitation/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hlZkFnZW5jZS9IYWJpbGl0YXRpb24vRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/antaresace/Project/Habilitation/CGB_Habilitation/Views/ChefAgence/Habilitation/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hlZkFnZW5jZS9IYWJpbGl0YXRpb24vRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/antaresace/Project/Habilitation/CGB_Habilitation/Views/ChefAgence/Habilitation/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hlZkFnZW5jZS9IYWJpbGl0YXRpb24vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

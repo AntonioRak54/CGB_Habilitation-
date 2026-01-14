@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CGB_Habilitation.Controllers.ChefAgence
 {
-    [Area("ChefAgence")]
+    
 public class ProfilController : Controller
 {
     private readonly HabilitationDbContext _context;

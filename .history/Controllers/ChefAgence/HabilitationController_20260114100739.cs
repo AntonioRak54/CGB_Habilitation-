@@ -52,7 +52,7 @@ namespace CGB_Habilitation.Controllers.Agent
             }
             
             ViewBag.Agents = _context.Agents.ToList();
-            return View("~/Views/ChefAgence/Habilitation/Create.cshtml", habilitations);
+            return View(habilitation);
         }
 
         // GET: Détails d'une habilitation
@@ -67,7 +67,7 @@ namespace CGB_Habilitation.Controllers.Agent
                 return NotFound();
             }
             
-            return View("~/Views/ChefAgence/Habilitation/Details.cshtml", habilitations);
+            return View(habilitation);
         }
 
         // GET: Formulaire d'édition
@@ -80,7 +80,7 @@ namespace CGB_Habilitation.Controllers.Agent
             }
             
             ViewBag.Agents = _context.Agents.ToList();
-            return View("~/Views/ChefAgence/Habilitation/Edit.cshtml", habilitations);
+            return View(habilitation);
         }
 
         // POST: Mettre à jour une habilitation
@@ -132,7 +132,7 @@ namespace CGB_Habilitation.Controllers.Agent
             }
             
             ViewBag.Agents = _context.Agents.ToList();
-            return View("~/Views/ChefAgence/Habilitation/Edit.cshtml", habilitations);
+            return View(habilitation);
         }
 
         // GET: Confirmation de suppression
@@ -147,7 +147,7 @@ namespace CGB_Habilitation.Controllers.Agent
                 return NotFound();
             }
             
-            return View("~/Views/ChefAgence/Habilitation/Delete.cshtml", habilitation);  
+            return View(habilitation);
         }
 
         // POST: Supprimer une habilitation
